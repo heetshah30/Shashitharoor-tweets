@@ -15,7 +15,7 @@ save(cred, file="twitter authentication.Rdata")
 load("twitter authentication.Rdata")
 registerTwitterOAuth(cred)
 ?setup_twitter_oauth
-setup_twitter_oauth(consumer_key='8vVRlgCOLVUwyOTVdDvuepuiY', consumer_secret='hTXUxY4uwOkVzh6GFe8KLyx2c1X9QWX1iC0vGpmk1xo1Rexaax', access_token='298013572-QN2qWkvBo3zVdJzB6J2UzPi3dm09y5pohRi5xwJp', access_secret='gPVf7XktWt2xjWTKO7u8o5UZzSJLwJhx5PE9nOBoP5Mmi')
+setup_twitter_oauth(consumer_key='-', consumer_secret='-', access_token='298013572-QN2qWkvBo3zVdJzB6J2UzPi3dm09y5pohRi5xwJp', access_secret='gPVf7XktWt2xjWTKO7u8o5UZzSJLwJhx5PE9nOBoP5Mmi')
 search.string <- "from:ShashiTharoor"
 no.of.tweets <- 10000
 tweets <- searchTwitteR(search.string, n=no.of.tweets, lang="en")
